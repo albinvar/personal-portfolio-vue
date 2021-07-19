@@ -4,12 +4,12 @@
     <ul class="-mb-8">
    
       <li v-for="event in timelineEvents">
-        <div class="relative pb-8">
+        <div class="relative pb-8" data-aos="fade-up">
           <span class="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true"></span>
           <div class="relative flex items-start space-x-3">
             <div>
               <div class="relative px-1">
-                <div class="h-8 w-8 bg-blue-500 rounded-full ring-8 ring-white flex items-center justify-center heartbeat">
+                <div class="h-8 w-8 bg-blue-500 rounded-full ring-8 ring-white flex items-center justify-center animate__animated animate__pulse animate__infinite">
                   <svg class="text-white h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                   </svg>
@@ -31,7 +31,7 @@
                   </a>
                   
                 </div>
-                <span class="whitespace-nowrap text-sm">{{ event.subTitle }}</span>
+                <span class="whitespace-nowrap text-sm">{{ event.date }}</span>
               </div>
               <div class="mt-2 text-gray-700">
               
@@ -55,11 +55,11 @@ export default {
 	data() {
 		return {
 			timelineEvents: [
-				{title: 'Started learning PHP', label: 'php', labelColor: 'blue', subTitle: 'something', date: '13-05-2021'},
-				{title: 'Started learning PHP', label: 'php', labelColor: 'blue', subTitle: 'something', date: '13-05-2021'},
-				{title: 'Started learning PHP', label: 'php', labelColor: 'blue', subTitle: 'something', date: '13-05-2021'},
-				{title: 'Started learning PHP', label: 'php', labelColor: 'blue', subTitle: 'something', date: '13-05-2021'},
-				{title: 'Started learning PHP', label: 'php', labelColor: 'blue', subTitle: 'something', date: '13-05-2021'},
+				{title: 'Started learning PHP', label: 'php', labelColor: 'blue', subTitle: 'something', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquam orci eu magna sodales, in luctus dolor semper. Maecenas dignissim velit non fermentum sodales. Nulla sed orci neque. Pellentesque ac rutrum mauris. Nulla at magna id metus eleifend molestie. Cras blandit eleifend iaculis. ', date: '13-05-2021'},
+				{title: 'Started learning Node Js', label: 'php', labelColor: 'blue', subTitle: 'something', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquam orci eu magna sodales, in luctus dolor semper. Maecenas dignissim velit non fermentum sodales. Nulla sed orci neque. Pellentesque ac rutrum mauris. Nulla at magna id metus eleifend molestie. Cras blandit eleifend iaculis. ', date: '13-05-2021'},
+				{title: 'Started learning  Python', label: 'php', labelColor: 'blue', subTitle: 'something', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquam orci eu magna sodales, in luctus dolor semper. Maecenas dignissim velit non fermentum sodales. Nulla sed orci neque. Pellentesque ac rutrum mauris. Nulla at magna id metus eleifend molestie. Cras blandit eleifend iaculis. ', date: '13-05-2021'},
+				{title: 'Started learning Css', label: 'php', labelColor: 'blue', subTitle: 'something', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquam orci eu magna sodales, in luctus dolor semper. Maecenas dignissim velit non fermentum sodales. Nulla sed orci neque. Pellentesque ac rutrum mauris. Nulla at magna id metus eleifend molestie. Cras blandit eleifend iaculis. ', date: '13-05-2021'},
+				{title: 'Started learning Sass', label: 'php', labelColor: 'blue', subTitle: 'something', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquam orci eu magna sodales, in luctus dolor semper. Maecenas dignissim velit non fermentum sodales. Nulla sed orci neque. Pellentesque ac rutrum mauris. Nulla at magna id metus eleifend molestie. Cras blandit eleifend iaculis. ', date: '13-05-2021'},
 				]
 			}
 		}
