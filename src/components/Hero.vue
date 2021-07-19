@@ -1,7 +1,7 @@
 <template>
  <section class="bg-white py-3">
 		 	<div class="flex items-end justify-center my-6">
-                    <img class="h-56 rounded rounded-full" src="../assets/me.webp" />
+                    <img class="h-56 w-56 rounded-full shadow-lg" src="../assets/me.webp" />
              </div>
             <div class="max-w-2xl px-6 text-center mx-auto">
                 <h2 class="text-3xl font-semibold text-gray-800">Hi, <span class="bg-indigo-600 text-white rounded px-1">I’m Albin</span> . Nice to meet you.</h2>
