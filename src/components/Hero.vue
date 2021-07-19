@@ -1,5 +1,5 @@
 <template>
- <section class="bg-white my-6">
+ <section class="bg-white py-3">
 		 	<div class="flex items-end justify-center my-6">
                     <img class="h-56 rounded rounded-full" src="../assets/me.webp" />
              </div>
