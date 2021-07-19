@@ -2,8 +2,8 @@
 <div class="max-w-xl text-left p-8">
   <div class="flow-root">
     <ul class="-mb-8">
-     
-      <li>
+   
+      <li v-for="event in timelineEvents">
         <div class="relative pb-8">
           <span class="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true"></span>
           <div class="relative flex items-start space-x-3">
@@ -19,7 +19,7 @@
             <div class="min-w-0 flex-1 py-0">
               <div class="text-md text-gray-500">
                 <div>
-                  <p class="font-medium text-gray-900 mr-2">test</p>
+                  <p class="font-medium text-gray-900 mr-2">{{ event.title }}</p>
                   
                   
                   
@@ -27,15 +27,15 @@
                     <div class="absolute flex-shrink-0 flex items-center justify-center">
                       <span class="h-1.5 w-1.5 rounded-full bg-blue-500" aria-hidden="true"></span>
                     </div>
-                    <div class="ml-3.5 font-medium text-gray-900">Approved by Admin </div>
+                    <div class="ml-3.5 font-medium text-gray-900">{{ event.label }}</div>
                   </a>
                   
                 </div>
-                <span class="whitespace-nowrap text-sm">Updated test</span>
+                <span class="whitespace-nowrap text-sm">{{ event.subTitle }}</span>
               </div>
               <div class="mt-2 text-gray-700">
               
-                <p>A <b>wedding</b> function was booked for <b>test, test</b></p>
+                <p>{{ event.description }}</p>
               
               </div>
             </div>
@@ -47,3 +47,22 @@
   </div>
  </div>
 </template>
+<script>
+export default {
+	name: 'Resume',
+	props: [],
+	components: {},
+	data() {
+		return {
+			timelineEvents: [
+				{title: 'Started learning PHP', label: 'php', labelColor: 'blue', subTitle: 'something', date: '13-05-2021'},
+				{title: 'Started learning PHP', label: 'php', labelColor: 'blue', subTitle: 'something', date: '13-05-2021'},
+				{title: 'Started learning PHP', label: 'php', labelColor: 'blue', subTitle: 'something', date: '13-05-2021'},
+				{title: 'Started learning PHP', label: 'php', labelColor: 'blue', subTitle: 'something', date: '13-05-2021'},
+				{title: 'Started learning PHP', label: 'php', labelColor: 'blue', subTitle: 'something', date: '13-05-2021'},
+				]
+			}
+		}
+	
+}
+</script>
