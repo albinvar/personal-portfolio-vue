@@ -3,8 +3,8 @@
   <div class="flow-root">
     <ul class="-mb-8">
    
-      <li v-for="event in timelineEvents">
-        <div class="relative pb-8" data-aos="fade-up">
+      <li v-for="event in timelineEvents" >
+        <div class="relative pb-8" data-aos="fade-right">
           <span class="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true"></span>
           <div class="relative flex items-start space-x-3">
             <div>

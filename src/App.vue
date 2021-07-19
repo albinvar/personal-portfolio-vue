@@ -69,6 +69,7 @@ export default {
        items: [
        { link: '/', name: "Home", isMain: false },
        { link: '/resume', name: "Resume", isMain: false },
+       { link: '/followers', name: "Followers", isMain: false },
 	]
      }
    },

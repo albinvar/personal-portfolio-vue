@@ -17,6 +17,14 @@ const routes = [
     component: () => import(/* webpackChunkName: "resume" */ '../views/Resume.vue')
   },
   {
+    path: '/followers',
+    name: 'Follwers',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "resume" */ '../views/Followers.vue')
+  },
+  {
     path: '/:catchAll(.*)',
     name: 'NotFound',
     component: NotFound
