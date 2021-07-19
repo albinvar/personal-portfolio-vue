@@ -67,7 +67,8 @@ export default {
      return {
        show: false,
        items: [
-       { link: '/home', name: "Home", isMain: false },
+       { link: '/', name: "Home", isMain: false },
+       { link: '/resume', name: "Resume", isMain: false },
 	]
      }
    },
