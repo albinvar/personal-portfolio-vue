@@ -8,7 +8,7 @@
                 <p class="text-gray-600 mt-4 animate__animated animate__fadeInUp">A Higher Secondary Student having passion for Web
                 Development & Ethical Hacking. I have pretty good exposure in Editorial Works Photography, Video Editing and so on</p>
             </div>
-            <div class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
+            <div class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between" data-aos="fade-down">
 
                 <a class="link" href="https://www.facebook.com/albin.varghese.395017"
                    data-tippy-content="@albin.varghese.395017">
