@@ -12,9 +12,9 @@ module.exports = {
      manifestOptions: {
       name: 'Albin Varghese',
       short_name: 'Albin Varghese',
-      theme_color: '# f44647',
-      background_color: '# f44647',
-      start_url: 'index.html',
+      theme_color: '#284AFF',
+      background_color: '#284AFF',
+      start_url: '/',
       display: 'standalone',
       orientation: 'portrait',
       icons: [
