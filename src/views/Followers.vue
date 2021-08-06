@@ -19,7 +19,39 @@
          </div>
        </div>
        <div v-else>
-       	Loading...
+       	
+	       <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+            <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+               <span alt="team" class="animate-pulse w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"> </span>
+               <div class="flex-grow">
+                  <div class="my-2 animate-pulse space-y-4 h-4 rounded bg-gray-200 title-font font-medium"></div>
+                  <div class="animate-pulse space-y-4 h-4 rounded bg-gray-200 title-font font-medium"></div>
+               </div>
+            </div>
+         </div>
+         
+         
+         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+            <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+               <span alt="team" class="animate-pulse w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"> </span>
+               <div class="flex-grow">
+                  <div class="my-2 animate-pulse space-y-4 h-4 rounded bg-gray-200 title-font font-medium"></div>
+                  <div class="animate-pulse space-y-4 h-4 rounded bg-gray-200 title-font font-medium"></div>
+               </div>
+            </div>
+         </div>
+         
+         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+            <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+               <span alt="team" class="animate-pulse w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"> </span>
+               <div class="flex-grow">
+                  <div class="my-2 animate-pulse space-y-4 h-4 rounded bg-gray-200 title-font font-medium"></div>
+                  <div class="animate-pulse space-y-4 h-4 rounded bg-gray-200 title-font font-medium"></div>
+               </div>
+            </div>
+         </div>
+         
+         
        </div>
       </div>
 </section>
@@ -50,3 +82,16 @@ export default {
 	
 }
 </script>
+
+<style>
+animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+}
+</style>
