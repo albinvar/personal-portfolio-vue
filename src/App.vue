@@ -64,6 +64,9 @@ export default {
   components: {
   	Navbar,
   },
+  created () {
+      document.title = "Albin Varghese";
+   },
   data() {
      return {
        show: false,
