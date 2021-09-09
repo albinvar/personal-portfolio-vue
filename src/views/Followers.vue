@@ -11,7 +11,7 @@
             <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg" data-aos="fade-up-right">
                <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" :src="follower.avatar_url">
                <div class="flex-grow">
-                  <h2 class="text-gray-900 title-font font-medium">{{ follower.login }}</h2>
+                  <h2 class="text-gray-900 title-font font-medium">@{{ follower.login }}</h2>
                   <p class="text-gray-500"></p>
                </div>
             </div>
@@ -94,4 +94,5 @@ animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
     opacity: .5;
   }
 }
+
 </style>
