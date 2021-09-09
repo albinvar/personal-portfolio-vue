@@ -1,7 +1,7 @@
 import { ref } from 'vue'
 
 const getPosts = () => {
-		const posts = ref([])
+		const posts = ref(null)
 		const error = ref(null)
 		
 		const load = async () => {
