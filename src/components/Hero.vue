@@ -1,5 +1,5 @@
 <template>
-   <section class="bg-white py-3">
+   <section class="bg-white py-3 lg:py-20">
       <div @click="animate" class="flex items-end justify-center my-6">
          <img :class="{'animate__jackInTheBox': animated}"  @animationend="animated = false" class="h-56 w-56 rounded-full shadow-lg animate__animated" src="../assets/me.webp" />
       </div>
@@ -9,7 +9,7 @@
             Development & Ethical Hacking. I have pretty good exposure in Editorial Works Photography, Video Editing and so on
          </p>
       </div>
-      <div class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between" data-aos="fade-down">
+      <div class="mt-6 lg:pt-8 pb-16 lg:pb-24 w-4/5 lg:w-3/5 mx-auto flex flex-wrap items-center justify-between" data-aos="fade-down">
          <a class="link" href="https://www.facebook.com/albin.varghese.395017"
             data-tippy-content="@albin.varghese.395017">
             <svg class="h-6 fill-current text-gray-600 hover:text-teal-700" role="img" viewBox="0 0 24 24"
