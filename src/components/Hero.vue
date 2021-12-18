@@ -63,10 +63,10 @@
          </a>
       </div>
    </section>
-   <section class="bg-gray-800 pattern py-20" >
-      <div class="max-w-5xl px-6 mx-auto text-center">
+   <section class="h-2/3 bg-gray-800 pattern py-20" >
+      <div class="p-6 mx-auto text-center">
          <h2 class="text-2xl font-semibold text-white">About Me</h2>
-         <p class="text-gray-400 mt-4" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center">Hello! I'm Albin Varghese a Higher Secondary Student having passion for Web
+         <p class="text-gray-400 mt-4 lg:px-16" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center">Hello! I'm Albin Varghese a Higher Secondary Student having passion for Web
             Development & Ethical Hacking. I have pretty good exposure in Editorial Works Photography, Video Editing and so on
          </p>
       </div>

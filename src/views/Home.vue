@@ -1,8 +1,5 @@
 <template>
 	<Hero />
-	
-	<Blog />
-	
 </template>
 
 <script>
