@@ -1,60 +1,34 @@
 <template>
-<section class="text-gray-700 body-font">
-   <div class="container px-5 py-6 mx-auto">
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-col text-center w-full mb-20">
-         <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Thanks all</h1>
-         <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Thanks to all of you for your valuable support. </p>
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">My Followers</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">I am so happy for the help and love that i get from my supporters. Much gratitude to all of you for being such a great support. Happy on hitting <strong>{{ followers == null ? 0 : followers.length }}</strong> followers at github.</p>
       </div>
-      <div class="" v-if="followers" v-for="follower in followers">
-         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-         <a :href="follower.html_url">
+      <div class="flex flex-wrap -m-2">
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full" v-if="followers" v-for="follower in followers">
+          <a :href="follower.html_url">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg"  data-aos="fade-up-right">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" :src="follower.avatar_url">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">@ {{ follower.login }}</h2>
+            </div>
+          </div>
+          </a>
+        </div>
+
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full" v-else v-for="index in 10">
             <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg" data-aos="fade-up-right">
-               <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" :src="follower.avatar_url">
-               <div class="flex-grow">
-                  <h2 class="text-gray-900 title-font font-medium">@{{ follower.login }}</h2>
-                  <p class="text-gray-500"></p>
-               </div>
+              <span alt="team" class="animate-pulse w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"> </span>
+              <div class="flex-grow">
+                <div class="my-2 animate-pulse space-y-4 h-4 rounded bg-gray-200 title-font font-medium"></div>
+                <div class="animate-pulse space-y-4 h-4 rounded bg-gray-200 title-font font-medium"></div>
+              </div>
             </div>
-           </a>
-         </div>
-       </div>
-       <div v-else>
-       	
-	       <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-            <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-               <span alt="team" class="animate-pulse w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"> </span>
-               <div class="flex-grow">
-                  <div class="my-2 animate-pulse space-y-4 h-4 rounded bg-gray-200 title-font font-medium"></div>
-                  <div class="animate-pulse space-y-4 h-4 rounded bg-gray-200 title-font font-medium"></div>
-               </div>
-            </div>
-         </div>
-         
-         
-         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-            <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-               <span alt="team" class="animate-pulse w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"> </span>
-               <div class="flex-grow">
-                  <div class="my-2 animate-pulse space-y-4 h-4 rounded bg-gray-200 title-font font-medium"></div>
-                  <div class="animate-pulse space-y-4 h-4 rounded bg-gray-200 title-font font-medium"></div>
-               </div>
-            </div>
-         </div>
-         
-         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-            <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-               <span alt="team" class="animate-pulse w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"> </span>
-               <div class="flex-grow">
-                  <div class="my-2 animate-pulse space-y-4 h-4 rounded bg-gray-200 title-font font-medium"></div>
-                  <div class="animate-pulse space-y-4 h-4 rounded bg-gray-200 title-font font-medium"></div>
-               </div>
-            </div>
-         </div>
-         
-         
-       </div>
+          </div>
       </div>
-</section>
+    </div>
+  </section>
 </template>
 
 <script>
