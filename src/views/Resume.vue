@@ -1,7 +1,7 @@
 <template>
-<div class="max-w-xl text-left p-8">
+<div class="max-w-xl text-left p-8 mx-auto">
   <div class="flow-root">
-    <ul class="-mb-8">
+    <ul class="mb-8">
    
       <li v-for="event in timelineEvents" >
         <div class="relative pb-8" data-aos="fade-right">
