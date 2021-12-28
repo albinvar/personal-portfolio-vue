@@ -1,5 +1,10 @@
 module.exports = {
-  
+    pages: {
+        index: {
+            entry: 'src/main.js',
+            title: 'Albin Varghese',
+        },
+    },
   pwa: {
     name: 'Albin Varghese',
     themeColor: '#311b92',

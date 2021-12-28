@@ -67,9 +67,7 @@ export default {
   	Navbar,
 	  Footer,
   },
-  created () {
-      document.title = "Albin Varghese";
-   },
+
   data() {
      return {
        show: false,

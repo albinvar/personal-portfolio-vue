@@ -50,6 +50,7 @@
 <script>
 export default {
 	name: 'Resume',
+  title: 'Resume | Albin Varghese',
 	props: [],
 	components: {},
 	data() {

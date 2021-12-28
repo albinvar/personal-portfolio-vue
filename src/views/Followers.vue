@@ -34,6 +34,7 @@
 <script>
 export default {
 	name: 'Followers',
+  title: 'Followers | Albin Varghese',
 	props: [],
 	components: {},
 	

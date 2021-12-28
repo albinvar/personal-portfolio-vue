@@ -69,6 +69,7 @@ import getPosts from '../composables/getPosts.js'
 	
 export default{
 	name: 'Blog',
+  title: 'Blog | Albin Varghese',
 	components: {},
 	setup() {
 		
