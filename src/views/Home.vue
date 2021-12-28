@@ -8,6 +8,7 @@ import Blog from '@/components/Blog.vue'
 
 export default {
   name: 'Home',
+  title: 'Albin Varghese',
   components: { Hero, Blog },
   data() {
      return {
