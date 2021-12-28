@@ -1,6 +1,6 @@
 <template>
-        <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-        <div class="sm:text-center lg:text-left">
+        <main class="mx-auto max-w-7xl px-4 my-40 sm:px-6 md:my-52 lg:my-72 lg:px-8 xl:mt-28">
+        <div class="text-center">
           <h1 class="text-7xl font-semibold">404</h1>
           <h3 class="my-4 text-xl">Page not found</h3>
         </div>

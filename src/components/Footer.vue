@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-gray-900">
+  <div class="bg-gray-900 relative inset-x-0 bottom-0">
     <div class="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-      <div class="flex flex-col justify-between py-10  border-gray-800 sm:flex-row">
+      <div class="flex flex-col justify-between py-10 border-gray-800 sm:flex-row">
         <p class="text-sm my-1 text-gray-500">
           © Copyright 2021 albinvar.in
         </p>
