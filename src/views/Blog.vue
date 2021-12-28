@@ -1,65 +1,42 @@
 <template>
-<div v-if="posts" v-for="post in posts" class="md:flex md:justify-center md:space-x-8 md:px-14">
-<div class="max-w-md m-6 bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl transform hover:scale-95 transition duration-500 hover:bg-gray-100">
-    <div class="">
-    <div class="">
-      <img class="w-full object-fill" src="https://cdn.pixabay.com/photo/2020/07/21/16/24/landscape-5426755_640.jpg" alt="Man looking at item at a store">
-    </div>
-    <div class="p-4">
-      <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Case study</div>
-      <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Finding customers for your new business</a>
-      <p class="mt-2 text-gray-500">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
-    </div>
-  </div>
-</div>
-</div>
-<div v-else class="md:flex md:justify-center md:space-x-8 md:px-14">
-<div class="max-w-md m-6 bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl transform hover:scale-95 transition duration-500 hover:bg-gray-100">
-    <div class="">
-    <div class=" animate-pulse space-4 bg-gray-300 h-40">
-      <span class="h-40 w-full"></span>
-    </div>
-    <div class="p-4">
-      <div class="my-4 mx-20 animate-pulse space-y-4 h-4 rounded bg-gray-200 title-font font-medium"></div>
-      <div class="h-6 mt-4 mx-3 animate-pulse space-y-4 h-4 rounded bg-gray-200 mb-6"></div>
-      <p class="h-3 my-1 animate-pulse space-y-4 h-4 rounded bg-gray-200"></p>
-      <p class="h-3 my-1 animate-pulse space-y-4 h-4 rounded bg-gray-200"></p>
-      <p class="h-3 my-1 animate-pulse space-y-4 h-4 rounded bg-gray-200"></p>
-    </div>
-  </div>
-</div>
-
-  <div class="max-w-md m-6 bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl transform hover:scale-95 transition duration-500 hover:bg-gray-100">
-    <div class="">
-      <div class=" animate-pulse space-4 bg-gray-300 h-40">
-        <span class="h-40"></span>
+  <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div class="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
+      <div class="p-8 bg-white border rounded shadow-sm" v-if="posts" v-for="post in posts" >
+        <p class="mb-3 text-xs font-semibold tracking-wide uppercase">
+          <a  class="transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800" aria-label="Category">weekend</a>
+          <span class="text-gray-600"> — 1 Feb 2020</span>
+        </p>
+        <a  aria-label="Article" title="Jingle Bells" class="inline-block mb-3 text-2xl font-bold leading-5 text-black transition-colors duration-200 hover:text-deep-purple-accent-400">Jingle Bells</a>
+        <p class="mb-5 text-gray-700">
+          Some pilots get picked and become television programs. Some don't, become nothing.
+        </p>
+        <div class="flex items-center">
+          <a  aria-label="Author" title="Author" class="mr-3">
+            <img src="../assets/me.webp" alt="avatar" class="object-cover w-10 h-10 rounded-full shadow-sm" />
+          </a>
+          <div>
+            <a  aria-label="Author" title="Author" class="font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-400">Albin Varghese</a>
+            <p class="text-sm font-medium leading-4 text-gray-600">Author</p>
+          </div>
+        </div>
       </div>
-      <div class="p-4">
-        <div class="my-4 mx-20 animate-pulse space-y-4 h-4 rounded bg-gray-200 title-font font-medium"></div>
-        <div class="h-6 mt-4 mx-3 animate-pulse space-y-4 h-4 rounded bg-gray-200 mb-6"></div>
-        <p class="h-3 my-1 animate-pulse space-y-4 h-4 rounded bg-gray-200"></p>
-        <p class="h-3 my-1 animate-pulse space-y-4 h-4 rounded bg-gray-200"></p>
-        <p class="h-3 my-1 animate-pulse space-y-4 h-4 rounded bg-gray-200"></p>
+      <div class="p-8 bg-white border rounded shadow-sm" v-else v-for="index in 9">
+        <h3 class="mx-8 h-6 my-3 animate-pulse space-y-4 h-4 rounded bg-gray-200">
+        </h3>
+        <p class="h-3 my-1 animate-pulse space-y-4 h-4 rounded bg-gray-200">
+        </p>
+        <p class="h-3 my-4 animate-pulse space-y-4 h-4 rounded bg-gray-200">
+        </p>
+        <div class="flex items-center">
+          <span class="h-3 my-1 mx-4 animate-pulse space-y-4 h-4 rounded bg-gray-200 object-cover w-10 h-10 rounded-full shadow-sm"></span>
+          <div>
+            <a aria-label="Author" title="Author" class="h-3 my-1 mx-3 px-14 animate-pulse space-y-4 h-4 rounded bg-gray-200"></a>
+            <p class="h-3 my-1 mx-4 px-8 animate-pulse space-y-4 h-4 rounded bg-gray-200"></p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-
-  <div class="max-w-md m-6 bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl transform hover:scale-95 transition duration-500 hover:bg-gray-100">
-    <div class="">
-      <div class=" animate-pulse space-4 bg-gray-300 h-40">
-        <span class="h-40"></span>
-      </div>
-      <div class="p-4">
-        <div class="my-4 mx-20 animate-pulse space-y-4 h-4 rounded bg-gray-200 title-font font-medium"></div>
-        <div class="h-6 mt-4 mx-3 animate-pulse space-y-4 h-4 rounded bg-gray-200 mb-6"></div>
-        <p class="h-3 my-1 animate-pulse space-y-4 h-4 rounded bg-gray-200"></p>
-        <p class="h-3 my-1 animate-pulse space-y-4 h-4 rounded bg-gray-200"></p>
-        <p class="h-3 my-1 animate-pulse space-y-4 h-4 rounded bg-gray-200"></p>
-      </div>
-    </div>
-  </div>
-
-</div>
 </template>
 
 <script>

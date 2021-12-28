@@ -17,7 +17,7 @@
           </a>
         </div>
 
-          <div class="p-2 lg:w-1/3 md:w-1/2 w-full" v-else v-for="index in 10">
+          <div class="p-2 lg:w-1/3 md:w-1/2 w-full" v-else v-for="index in 6">
             <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg" data-aos="fade-up-right">
               <span alt="team" class="animate-pulse w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"> </span>
               <div class="flex-grow">
