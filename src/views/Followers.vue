@@ -9,9 +9,9 @@
         <div class="p-2 lg:w-1/3 md:w-1/2 w-full" v-if="followers" v-for="follower in followers">
           <a :href="follower.html_url">
           <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg"  data-aos="fade-up-right">
-            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" :src="follower.avatar_url">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" oncontextmenu="return false" :src="follower.avatar_url">
             <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">@ {{ follower.login }}</h2>
+              <h2 class="text-gray-900 title-font font-medium">@{{ follower.login }}</h2>
             </div>
           </div>
           </a>

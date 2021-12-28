@@ -1,7 +1,7 @@
 <template>
    <section class="bg-white py-3 lg:py-20">
       <div @click="animate" class="flex items-end justify-center my-6">
-         <img :class="{'animate__jackInTheBox': animated}"  @animationend="animated = false" class="h-56 w-56 rounded-full shadow-lg animate__animated" src="../assets/me.webp" />
+         <img :class="{'animate__jackInTheBox': animated}"  @animationend="animated = false" class="h-56 w-56 rounded-full shadow-lg animate__animated" oncontextmenu="return false" src="../assets/me.webp" />
       </div>
       <div class="max-w-2xl px-6 text-center mx-auto">
          <h2 class="text-3xl font-semibold text-gray-800 animate__animated animate__slideInLeft">Hi, <span class="bg-indigo-600 text-white rounded px-1">I’m Albin</span> . Nice to meet you.</h2>
