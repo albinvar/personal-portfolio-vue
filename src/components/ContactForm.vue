@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    {{ emailSendResponseMessage }}
     <form @submit.prevent="sendEmail">
       <label>Name</label>
       <input
@@ -7,21 +8,26 @@
           v-model="name"
           name="name"
           placeholder="Your Name"
+          required
       >
       <label>Email</label>
+      {{ emailSendResponseMessage }}
       <input
           type="email"
           v-model="email"
           name="email"
           placeholder="Your Email"
+          required
       >
       <label>Message</label>
       <textarea
           name="message"
           v-model="message"
           cols="30" rows="5"
-          placeholder="Message">
+          placeholder="Message" required>
           </textarea>
+
+      <div class="g-recaptcha" :data-sitekey="siteKey"></div>
 
       <input type="submit" value="Send">
     </form>
@@ -40,8 +46,16 @@ export default {
     return {
       name: '',
       email: '',
-      message: ''
+      message: '',
+      emailSendResponseMessage: '',
+      siteKey: process.env.VUE_APP_EMAIL_CAPTCHA_SITE_KEY
     }
+  },
+
+  mounted() {
+    let recaptchaScript = document.createElement('script')
+    recaptchaScript.setAttribute('src', 'https://www.google.com/recaptcha/api.js')
+    document.head.appendChild(recaptchaScript)
   },
 
   methods: {
@@ -52,9 +66,9 @@ export default {
           email: this.email,
           message: this.meessage
         })
-        console.log('it works!!!')
+        this.emailSendResponseMessage = "Thank you so much for reaching out to me.";
       } catch (error) {
-        console.log({error})
+        this.emailSendResponseMessage = "Email sending failed due to a server error.";
       }
       // Reset form field
       this.name = ''
