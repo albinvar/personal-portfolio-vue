@@ -76,6 +76,7 @@ export default {
        { link: '/resume', name: "Resume", isMain: false },
        { link: '/blog', name: "Blog", isMain: false },
        { link: '/followers', name: "Followers", isMain: false },
+         { link: '/contact', name: "Contact", isMain: true },
 	]
      }
    },
