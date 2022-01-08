@@ -1,17 +1,23 @@
 <template>
-{{ formStatus }}
+<!-- contact form -->
+  <ContactForm>
+
+  </ContactForm>
 </template>
 
 <script>
+import ContactForm from "@/components/ContactForm";
+
 export default {
+
   name: 'Contact',
   title: 'Contact | Albin Varghese',
   props: [],
-  components: {},
+  components: { ContactForm },
 
   data() {
     return {
-      formStatus: true
+      formStatus: false
     }
   }
 }
